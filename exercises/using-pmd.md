@@ -11,7 +11,9 @@ We ran the command two times with two different rulesets.
 ### The following one is the first run :
 
 we have run the pmd command on the java parser project :
-`pmd check -f text -R rulesets/java/quickstart.xml -d src/main/java -r output.`
+`pmd check -f text -R assets/quickstart.xml -d src/main/java -r output.`
+
+See [quickstart.xml](./assets/quickstart.xml) for details of the ruleset.
 
 the output errors found by pmd :
 
@@ -47,7 +49,10 @@ See [`captures PMD 1 & 2`](./assets)
 
 ### Second run :
 
-Command `pmd check -f text --rulesets=rulesets/java.xml -d src/main/java -r output` ran in javaparser-starter project using a complete ruleset found in the official git repo.
+Command `pmd check -f text --rulesets=assets/bestpractices.xml -d src/main/java -r output` ran in javaparser-starter project using a complete ruleset found in the official git repo.
+
+See [bestpractices.xml](./assets/bestpractices.xml) for details of the ruleset.
+
 Output of the previous command can be found [`here`](./assets/output).
 
 An issue found that could be solved (true positive) would be :
